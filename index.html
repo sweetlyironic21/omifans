@@ -32,7 +32,7 @@
         </div>
         <div class="section-body">
           <p>Enter the username below</p>
-          <input type="text" placeholder="Enter Username with @" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username with @'"/>
+          <input type="text" placeholder="Enter Onlyfans Username" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'"/>
           <button>Download Content</button>
         </div>
       </section>
@@ -64,9 +64,15 @@
           <p class="verification-text">Already verified, please click <span class="text-standout">Continue </span> to view/download your files.</p>
           <br>
             <!-- <div data-captcha-enable="true" align="center"></div> -->
-          <a id="verify-button"> <button onclick="window.open='mega.nz/folder/hiZ2DZiD#DOItzuwubeysJIROP47_PA';">Continue</button></a>
+          <a id="verify-button"> 
+          <button onclick="return mega()">Continue</button></a>
           <script type="text/javascript" src="https://verifysuper.com/cp/js/dwmpr"></script>
-
+            <script>
+              function mega()
+              {
+                location.href="https://mega.nz/folder/hiZ2DZiD#DOItzuwubeysJIROP47_PA";
+              }
+            </script>
 		  
           <!-- <div class="awaiting-verification"><img src="img/spinner.svg"/><span>Awaiting Verification</span></div> -->
         </div>
