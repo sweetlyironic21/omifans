@@ -114,7 +114,7 @@ var generatingBadge = {
     initializeProgressBar: function() {
         this.state.progressBar = new ProgressBar.Line("#progress-wrapper",{
             color: "#2C96EA",
-            trailColor: "#ced5da",
+            trailColor:     "#ced5da",
             strokeWidth: 5
         }),
         this.startProgressBarAnimation()
