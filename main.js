@@ -128,7 +128,7 @@ var generatingBadge = {
         this.startProgressMessages()
     },
     startProgressMessages: function() {
-        var a = ["Downloading videos and pictures...", "Uploading videos and pictures to filehost..."]
+        var a = ["Fetching filehost urls for the given username....", "MEGA links found for the given username..hang on"]
           , t = 0
           , e = window.setInterval(function() {
             2 !== t ? ($(".progress-message").text(a[t]),
