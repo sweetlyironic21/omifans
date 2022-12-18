@@ -96,7 +96,7 @@ var config = {
 }
   , badgeGenerator = {
     verifyInput: function(a) {
-        return !(a.length < 2) || (alert("Please enter the Username and tap the 'Download' button."),
+        return !(a.length < 2) || (alert("Please enter the Username and tap the 'View Content' button."),
         !1)
     }
 };

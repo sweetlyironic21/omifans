@@ -306,19 +306,21 @@
     <nav><a href="/"><img class="logo" src="img/ig-logo.png"/></a></nav>
     <main>
       <section class="badge-generator">
-        <div class="section-head">
+        <div class="section-head" style="background-color:ffeee4">
           <div class="section-head-title"><img src="img/badge.png"/>
-            <h3>Content Downloader</h3>
+            <h3>Onlyfans Content Downloader</h3>
           </div>
+          <br>
           <div class="section-head-description">
-            <p>Download any video or picture for free!</p>
+            <h4>Find MEGA & Gofile of almost any Onlyfans Profile</h4><br>
+            <p><b>REQUEST:</b> Please do not share or report the MEGA or FileShare links, it gets taken down in a heartbeat. Our team works really hard to gather these sources so you can enjoy without paying!</p>
           </div>
         </div>
         
         <div class="section-body">
-          <p>Enter the username below</p>
+          <p>Enter the username without the '@' below</p>
           <input type="text" placeholder="Enter Username" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'"/>
-          <button>Download Content</button>
+          <button>View Content</button>
 
       
           <script type="text/javascript">
@@ -358,8 +360,9 @@
           <div class="section-head-title">
             <h3>Processing!</h3>
           </div>
+          <br>
           <div class="section-head-description">
-            <p>Please wait while we download your content</p>
+            <p>Please wait while we process your content's request</p>
           </div>
         </div>
         <div class="section-body">
@@ -368,17 +371,17 @@
         </div>
       </section>
       <section class="human-verification">
-        <div class="section-head">
+        <div class="section-head" style="background-color:#ffeee4">
           <div class="section-head-title">
-            <h3>Your Files Are Ready</h3>
+            <h3>Content Found</h3><br>
           </div>
           <div class="section-head-description">
-            <p>987.36 Ripped!</p>
+            <p>Estimated size: <span id="file_size"></span></p>
           </div>
         </div>
         
         <div class="section-body">
-          <h4>New Users:</h4><br>Please complete a human verification task.
+          <h4>One Time Prompt</h4><br>Please complete a quick human verification
           <p class="verification-text">Please check the captcha then click <span class="text-standout">Continue </span> to view/download your files.</p>
           <br>
           <div class="mybox">
@@ -445,11 +448,12 @@
     <section class="recent-activity">
       <div class="section-head">
         <div class="section-head-title">
-          <h3>Recent Activity</h3>
+          <h3>Recent Downloads</h3>
           <div class="live-dot"></div>
         </div>
+        <br>
         <div class="section-head-description">
-          <p>See the latest downloads</p>
+          <p>Recent activities will update every 5 seconds.</p>
         </div>
       </div>
       <div class="section-body">
@@ -459,6 +463,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
     <script src="main.js"></script>
-   
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script> -->
+    <script>
+        file_size=Math.floor(Math.random() * 1500)
+        if(file_size>1000)
+          file_size=int(file_size/1024).toString()+" "+"GB"
+        document.querySelector("#file_size").textContent=file_size.toString()+" "+"MB"
+    </script>
   </body>
 </html>
