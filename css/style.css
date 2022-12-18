@@ -208,8 +208,8 @@ section {
   height: 20px;
   vertical-align: middle;
   margin-right: 8px;
-  -webkit-animation: spin 1.50 infinite linear;
-  animation: spin 1.50s infinite linear; }
+  -webkit-animation: spin 0.75s infinite linear;
+  animation: spin 1.75s infinite linear; }
 
 .human-verification .awaiting-verification span {
   color: #8e8e8e;
