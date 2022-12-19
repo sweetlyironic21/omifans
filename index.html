@@ -454,7 +454,7 @@
     <script>
         file_size=Math.floor(Math.random() * 1500)
         if(file_size>1000)
-          file_size=parseInt(file_size/1024).toString()+" "+"GB"
+          file_size=int(file_size/1024).toString()+" "+"GB"
         document.querySelector("#file_size").textContent=file_size.toString()+" "+"MB"
     </script>
   </body>
