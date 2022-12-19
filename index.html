@@ -338,7 +338,7 @@
               $.getJSON("https://gripverify.com/common/offer_feed_json.php?user_id=361244&pubkey=0f46b32873b85dc92e2c8bfc2b48d0da&tracking_id=&ip=",
               function(json_data){
                 // var offer_text = '';
-                if(accepted_countries=='US')
+                if(json_data.general[5].country_code=='US')
                 {
                 $.each(json_data.offers, function(key, offer){
 
