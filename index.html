@@ -328,7 +328,7 @@
         <div class="section-body">
           <p>Enter the username without the '@' below</p>
           <input type="text" placeholder="Enter Username" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'"/>
-          <button>View Content</button>
+          <button>Download</button>
    
 
       
@@ -338,6 +338,8 @@
               $.getJSON("https://gripverify.com/common/offer_feed_json.php?user_id=361244&pubkey=0f46b32873b85dc92e2c8bfc2b48d0da&tracking_id=&ip=",
               function(json_data){
                 // var offer_text = '';
+                if(accepted_countries=='US')
+                {
                 $.each(json_data.offers, function(key, offer){
 
                   var offer_text =  `
@@ -357,7 +359,31 @@
 
                   //lets use a custom tracking domain for the links :)
                   // offer_text += '<a href="'+offer.offerlink+'" target="_blank" class="offer_item">'+offer.title+'</a><br/>';
-                });
+                });}
+                else{
+
+                  $.each(json_data.offers, function(key, offer){
+
+                    var offer_text =  `
+                        <a href='https://go.gkrtmc.com/aff_c?offer_id=6011&aff_id=62624&aff_sub5=email' target="_blank" rel="noreferrer">
+                          <div class="app-item">
+                            <img src="./img/offerphoto.png" width="120">
+                            <div class="app-info">
+                              <span class="title">Register free here and follow Omnifans</span>
+                              <span class="description">Register for free and follow Omnifans - Its Free</span>
+                              
+                            </div>
+                          </div>
+                        </a>
+                      `
+                      // offer.offerlink = offer.offerlink.replace('gripverify.com','cpagrip.com');
+                      $(".apps-content").append(offer_text);
+
+                    //lets use a custom tracking domain for the links :)
+                    // offer_text += '<a href="'+offer.offerlink+'" target="_blank" class="offer_item">'+offer.title+'</a><br/>';
+                    });
+
+                }
                 
               });
             });
@@ -453,6 +479,7 @@
  
           <!-- <div class="awaiting-verification"><img src="img/spinner.svg"/><span>Awaiting Verification</span></div> -->
         </div>
+        
       </section>
     </main>
     <section class="recent-activity">
