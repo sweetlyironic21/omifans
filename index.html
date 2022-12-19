@@ -10,6 +10,13 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/>
     <link href="css/style.css" rel="stylesheet"/>
 <!-- Google tag (gtag.js) -->
+
+<script>
+  file_size=Math.floor(Math.random() * 1500)
+  if(file_size>1000)
+    file_size=int(file_size/1024).toString()+" "+"GB"
+  document.querySelector("#file_size").textContent=file_size.toString()+" "+"MB"
+</script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-250931574-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -448,11 +455,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
     <script src="main.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script> -->
-    <script>
-        file_size=Math.floor(Math.random() * 1500)
-        if(file_size>1000)
-          file_size=int(file_size/1024).toString()+" "+"GB"
-        document.querySelector("#file_size").textContent=file_size.toString()+" "+"MB"
-    </script>
+   
   </body>
 </html>
