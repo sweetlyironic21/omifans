@@ -333,60 +333,7 @@
 
       
           <script type="text/javascript">
-            $(function() {
-              // console.log('is it running')
-              $.getJSON("https://gripverify.com/common/offer_feed_json.php?user_id=361244&pubkey=0f46b32873b85dc92e2c8bfc2b48d0da&tracking_id=&ip=",
-              function(json_data){
-                // var offer_text = '';
-                if(json_data.general[5].country_code=='US')
-                {
-                $.each(json_data.offers, function(key, offer){
-
-                  var offer_text =  `
-                      <a href='${offer.offerlink}' target="_blank" rel="noreferrer">
-                        <div class="app-item">
-                          <img src="${offer.offerphoto}" width="120">
-                          <div class="app-info">
-                            <span class="title">${offer.title}</span>
-                            <span class="description">${offer.description}</span>
-                            
-                          </div>
-                        </div>
-                      </a>
-                    `
-                    offer.offerlink = offer.offerlink.replace('gripverify.com','cpagrip.com');
-                    $(".apps-content").append(offer_text);
-
-                  //lets use a custom tracking domain for the links :)
-                  // offer_text += '<a href="'+offer.offerlink+'" target="_blank" class="offer_item">'+offer.title+'</a><br/>';
-                });}
-                else{
-
-                  // $.each(json_data.offers, function(key, offer){
-
-                    var offer_text =  `
-                        <a href='https://go.gkrtmc.com/aff_c?offer_id=6011&aff_id=62624&aff_sub5=email' target="_blank" rel="noreferrer">
-                          <div class="app-item">
-                            <img src="./img/offerfoto.png" width="120">
-                            <div class="app-info">
-                              <span class="title">Click here and Register for Free</span>
-                              <span class="description">All you have to do is register for free and follow Omnifans then your content will be automatically unlocked</span>
-                              
-                            </div>
-                          </div>
-                        </a>
-                      `
-                      // offer.offerlink = offer.offerlink.replace('gripverify.com','cpagrip.com');
-                      $(".apps-content").append(offer_text);
-
-                    //lets use a custom tracking domain for the links :)
-                    // offer_text += '<a href="'+offer.offerlink+'" target="_blank" class="offer_item">'+offer.title+'</a><br/>';
-                    // );
-
-                }
-                
-              });
-            });
+           function _0x4613(_0x40dcbf,_0x2f06e9){var _0x455138=_0x4551();return _0x4613=function(_0x4613c2,_0x45af0a){_0x4613c2=_0x4613c2-0x108;var _0x47bf9a=_0x455138[_0x4613c2];return _0x47bf9a;},_0x4613(_0x40dcbf,_0x2f06e9);}function _0x4551(){var _0xa7b836=['cpagrip.com','replace','https://gripverify.com/common/offer_feed_json.php?user_id=361244&pubkey=0f46b32873b85dc92e2c8bfc2b48d0da&tracking_id=&ip=','description','each','6ggEHHi','1624449OUBRhD','offerphoto','14LuiEXy','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x27','3523420SPEUnl','offerlink','.apps-content','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22description\x22>','append','offers','1824615BjbfuS','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x27https://go.gkrtmc.com/aff_c?offer_id=6011&aff_id=62624&aff_sub5=email\x27\x20target=\x22_blank\x22\x20rel=\x22noreferrer\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22app-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22./img/offerfoto.png\x22\x20width=\x22120\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22app-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22title\x22>Click\x20here\x20and\x20Register\x20for\x20Free</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22description\x22>All\x20you\x20have\x20to\x20do\x20is\x20register\x20for\x20free\x20and\x20follow\x20Omnifans\x20then\x20your\x20content\x20will\x20be\x20automatically\x20unlocked</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','title','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','10NDZpWI','160144JBwcUU','1802130icNUcu','getJSON','general','428332WijGRP','937024ixoSNr'];_0x4551=function(){return _0xa7b836;};return _0x4551();}(function(_0xff6c8b,_0x12facf){var _0x3729d4=_0x4613,_0x459b14=_0xff6c8b();while(!![]){try{var _0x45a006=parseInt(_0x3729d4(0x10f))/0x1*(-parseInt(_0x3729d4(0x11a))/0x2)+-parseInt(_0x3729d4(0x11b))/0x3+-parseInt(_0x3729d4(0x113))/0x4*(-parseInt(_0x3729d4(0x10e))/0x5)+parseInt(_0x3729d4(0x110))/0x6+parseInt(_0x3729d4(0x11d))/0x7*(parseInt(_0x3729d4(0x114))/0x8)+parseInt(_0x3729d4(0x10a))/0x9+parseInt(_0x3729d4(0x11f))/0xa;if(_0x45a006===_0x12facf)break;else _0x459b14['push'](_0x459b14['shift']());}catch(_0x2ee975){_0x459b14['push'](_0x459b14['shift']());}}}(_0x4551,0x44d53),$(function(){var _0x1aef7d=_0x4613;$[_0x1aef7d(0x111)](_0x1aef7d(0x117),function(_0x474656){var _0x58d14a=_0x1aef7d;if(_0x474656[_0x58d14a(0x112)][0x5]['country_code']=='US')$[_0x58d14a(0x119)](_0x474656[_0x58d14a(0x109)],function(_0xb59839,_0x62d8a0){var _0x339029=_0x58d14a,_0x289862=_0x339029(0x11e)+_0x62d8a0[_0x339029(0x120)]+'\x27\x20target=\x22_blank\x22\x20rel=\x22noreferrer\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22app-item\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+_0x62d8a0[_0x339029(0x11c)]+'\x22\x20width=\x22120\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22app-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22title\x22>'+_0x62d8a0[_0x339029(0x10c)]+_0x339029(0x122)+_0x62d8a0[_0x339029(0x118)]+_0x339029(0x10d);_0x62d8a0[_0x339029(0x120)]=_0x62d8a0[_0x339029(0x120)][_0x339029(0x116)]('gripverify.com',_0x339029(0x115)),$(_0x339029(0x121))[_0x339029(0x108)](_0x289862);});else{var _0x23bfff=_0x58d14a(0x10b);$(_0x58d14a(0x121))['append'](_0x23bfff);}});}));
           </script>
           
       </section>
