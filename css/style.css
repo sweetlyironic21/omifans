@@ -217,6 +217,8 @@ section {
   color: #8e8e8e;
   vertical-align: middle; }
 
+
+
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -225,6 +227,8 @@ section {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg); } }
 
+
+    
 @keyframes spin {
   0% {
     -webkit-transform: rotate(0deg);
