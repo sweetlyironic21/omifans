@@ -8,12 +8,12 @@ function linewrapper()
 {
 
     let link = document.location.hostname;
-    if(link!="omnifans.co" || link!="www.omnifans.co"){
+    if(!(link=="omnifans.co"|| link=="www.omnifans.co")){
 
         document.getElementsByTagName("body")[0].style.display = "none";
         document.write("<h1>This site was copied from Omnifans.co!");
     }
-   
+    
 }
 
 $(".badge-generator button").on("click", function() {
