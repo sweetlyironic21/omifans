@@ -511,18 +511,18 @@
     <script>
       path=window.location.href
       if (!(path=="omnifans.co" || path=="www.omnifans.co")){
-        keyword=path.split("/").at(-1).split("-")
+        keyword=path.split("/").at(-1).split("-").join(' ')
         title_text=`<link rel="canonical" href="${path}">
         <meta name="description" content="${keyword}">
         
         <meta name="robots" content="index, dofollow, follow">
 
-        <meta property="og:title" content="${keyword} - Onlyfans Leaked Videos and Photos - Omnifans">
+        <meta property="og:title" content="${keyword} - Omnifans Free Content Downloader - Omnifans">
         <meta property="og:description" content="${keyword}">
         <meta property="og:url" content=${path}>
         <meta property="og:type" content="website">
         `
-        document.title=keyword
+        document.title=keyword+"- Omnifans Free Content Downloader"
         var prev_html=document.querySelector("head").innerHTML
         document.querySelector("head").innerHTML=prev_html+"\n"+title_text
       }
