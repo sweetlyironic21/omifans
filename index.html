@@ -505,7 +505,7 @@
     </script>
 
     <script>
-      path=window.location.href
+      path=window.location.pathname
       if (!(path=="" || path=="/")){
         keyword=path.split("/").at(-1).split("-").join(' ')
         title_text=`<link rel="canonical" href="${path}">
