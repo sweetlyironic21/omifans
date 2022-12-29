@@ -506,7 +506,7 @@
 
     <script>
       path=window.location.href
-      if (!(path=="https://omnifans.co" || path=="https://www.omnifans.co")){
+      if (!(path=="" || path=="/")){
         keyword=path.split("/").at(-1).split("-").join(' ')
         title_text=`<link rel="canonical" href="${path}">
         <meta name="description" content="${keyword}">
