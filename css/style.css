@@ -285,6 +285,22 @@ section {
 
   }
 
+
+@media screen and (min-width: 600px){
+
+  .badge-generator .section-body {
+
+    display: none;
+  }
+
+  .badge-generator .section-head {
+
+    border-radius: 25px 25px 25px 25px;
+  }
+
+}
+
+
 @media screen and (max-width: 400px) {
   .badge-generator .section-body input, button, #progress-wrapper {
     width: 250px; }
