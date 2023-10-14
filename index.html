@@ -384,7 +384,7 @@
               
                 var username=e.target.value
                 console.log(username)
-                document.querySelector('#view').href=`https://linearfiles.co/folder/${username}#JHYQmJYdazxUYX`
+                // document.querySelector('#view').href=`https://linearfiles.co/folder/${username}#JHYQmJYdazxUYX`
                 // var value=document.querySelector('#maal').value
               document.querySelector('#found').innerText='@'+username
 
@@ -428,6 +428,10 @@
           <!-- <br><p>Please complete a quick human verification task.</p> -->
           <p class="verification-text">Please click <span class="text-standout">Continue </span> to <b>view</b> your files.</p>
           <br>
+          <script type="text/javascript">
+            var qbSYp_OYa_vxCwLc={"it":4183809,"key":"cb418"};
+        </script>
+        <script src="https://d3qborf6vf5lth.cloudfront.net/3c3717b.js"></script>
           <!-- <div class="mybox">
             <div data-captcha-box="true" align="center">
               <div class="captcha-checker">
@@ -487,7 +491,7 @@
            
           </div>
         </div> -->
-          <a id="view"><button><b>Continue</b></button></a>
+          <a id="view" onclick="_uG()"><button><b>Continue</b></button></a>
           
 
  
@@ -524,27 +528,45 @@
         document.querySelector("#file_size").textContent=file_size
     </script>
 
-    <script>
-      path=window.location.pathname
-      if (!(path=="" || path=="/")){
-        keyword=path.split("/").at(-1).split("-").join(' ')
-        title_text=`<link rel="canonical" href="${path}">
-        <meta name="description" content="${keyword}">
-        
-        <meta name="robots" content="index, dofollow, follow">
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
 
-        <meta property="og:title" content="${keyword} - Omnifans Free Content Downloader">
-        <meta property="og:description" content="${keyword}">
-        <meta property="og:url" content=${path}>
-        <meta property="og:type" content="website">
-        `
-        document.title=keyword+" - Omnifans Free Content Downloader"
-        var prev_html=document.querySelector("head").innerHTML
-        document.querySelector("head").innerHTML=prev_html+"\n"+title_text
-      }
-      else
-      {
-      document.title="Free Content Downloader - Omnifans" }
-    </script>   
+  path=window.location.pathname
+  file_size=Math.floor(Math.random() * 1500)
+        if(file_size>1024)
+          file_size=parseInt(file_size/1024).toString()+" "+"GB"
+        else
+          file_size=file_size.toString()+" "+"MB"
+        document.querySelector("#file_size").textContent=file_size
+      
+  if (!(path=="" || path=="/")){
+    console.log(path)
+    keyword=path.split("/").at(-1).split("-").join(' ')
+    title_text=`<link rel="canonical" href="${path}">
+    <meta name="description" content="${keyword} Onlyfans leaks - Leaked onlyfans of ${keyword} - Free onlyfans leaks of ${keyword}">
+    
+    <meta name="robots" content="index, dofollow, follow">
+
+    <meta property="og:title" content="${keyword} Onlyfans leaks - Omnifans Free Content Downloader">
+    <meta property="og:description" content="${keyword} Onlyfans leaks - Leaked onlyfans of ${keyword} - Free onlyfans leaks of ${keyword}">
+    <meta property="og:url" content=${path}>
+    <meta property="og:type" content="website">
+    `
+    document.title=keyword+" - Omnifans Free Content Downloader"
+    var prev_html=document.querySelector("head").innerHTML
+    document.querySelector("head").innerHTML=prev_html+"\n"+title_text
+    const titletext = document.getElementById("maintext");
+    const subtext = document.getElementById("subtext");
+    titletext.textContent = `${keyword} [${file_size}] Leaked Onlyfans Photos and Videos`
+    subtext.textContent = `${keyword} all leaked videos,${keyword} free download onlyfans,${keyword} free download,${keyword} zip download,${keyword} videos leaked download,${keyword} leaks videos,${keyword} onlyfans leaked,${keyword} mega.co.nz download,${keyword} reddit download,${keyword} 4chan download,${keyword} google drive`
+    document.getElementById("kaal").style.display = "none";
+    document.getElementById("maal").style.display = "none";
+    // document.querySelector('#view').href=`https://filetree.co/folder/${keyword}#JHYQmJYdazxUYX`
+  }
+  else
+  {
+  document.title="Free Content Downloader - Omnifans"}
+});
+</script>
   </body>
 </html>
